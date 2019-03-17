@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/bgColor2"
+        android:gravity="center"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="45sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/bgColor2"
+        android:gravity="center"
+        android:hint="₹"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        >
+
+        <Button
+            android:id="@+id/btnEuro"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="€"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnUsd"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="$"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnPound"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="£"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnYen"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="¥"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnRuble"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="₽"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnDinar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="د.ك"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btnAsd"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="A$"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnCad"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="C$"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnBtc"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="BTC"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:background="@color/bgColor2"
+            android:layout_margin="4dp"
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
